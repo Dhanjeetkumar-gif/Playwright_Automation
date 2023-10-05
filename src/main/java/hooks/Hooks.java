@@ -1,8 +1,11 @@
 package hooks;
 
+//import cucumber.api.java.After;
+//import cucumber.api.java.Before;
 import driverFactory.DriverFactory;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+import org.junit.After;
+import org.junit.Before;
+
 
 public class Hooks {
     String browser="chrome";
@@ -12,6 +15,8 @@ public class Hooks {
          driverFactory= new DriverFactory(browser);
 
     }
+
+
 
     @After
     public void tearDown(){
